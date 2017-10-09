@@ -26,6 +26,7 @@ def set_v(v, dealer_score, player_score, value):
     v[dealer_score - 1, player_score - 1] = value
     return v
 
+
 @njit
 def set_q(q, dealer_score, player_score, action, qvalue):
     q[dealer_score - 1, player_score - 1, action] = qvalue
